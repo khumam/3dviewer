@@ -14,7 +14,7 @@
       const model = document.querySelector("#main");
       const annotationClicked = (annotation) => {
         let dataset = annotation.dataset;
-        model.cameraTarget = dataset.normal;
+        model.cameraTarget = dataset.position;
         model.cameraOrbit = dataset.orbit;
         model.fieldOfView = dataset.fov;
         console.log(model)
